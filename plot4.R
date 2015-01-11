@@ -1,5 +1,4 @@
 
-
 dataFile <- "household_power_consumption.txt"
 
 library(data.table)
@@ -22,7 +21,7 @@ with(DF, {
          ylab = "Global Active Power", xlab = "")
     
     plot(Voltage ~ DateTime, type = "l", 
-         ylab = "Voltage", xlab = "", ylab="datetime")
+         ylab = "Voltage", xlab = "datetime")
     
     plot(Sub_metering_1 ~ DateTime, type = "l", 
          ylab = "Energy sub metering", xlab = "")
@@ -32,11 +31,10 @@ with(DF, {
     lines(Sub_metering_3 ~ DateTime, col = 'Blue')
     
     legend("topright", col = c("black", "red", "blue"), lty = 1, lwd = 2, bty = "n",
-        legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+           legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     
     plot(Global_reactive_power ~ DateTime, type = "l", 
-         ylab = "Global_rective_power",xlab = "", ylab="datetime")
+         ylab = "Global_rective_power", xlab = "datetime")
 })
 
 dev.off()
-

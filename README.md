@@ -1,4 +1,4 @@
-### Thi is a markdown file for Coursera online course -- Exploratory Data Analysis 
+### This is a markdown file for Coursera online course -- Exploratory Data Analysis
 
 ## Introduction
 
