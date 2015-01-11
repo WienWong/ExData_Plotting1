@@ -22,7 +22,7 @@ with(DF, {
          ylab = "Global Active Power", xlab = "")
     
     plot(Voltage ~ DateTime, type = "l", 
-         ylab = "Voltage", xlab = "")
+         ylab = "Voltage", xlab = "", ylab="datetime")
     
     plot(Sub_metering_1 ~ DateTime, type = "l", 
          ylab = "Energy sub metering", xlab = "")
@@ -35,7 +35,7 @@ with(DF, {
         legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     
     plot(Global_reactive_power ~ DateTime, type = "l", 
-         ylab = "Global Rective Power",xlab = "")
+         ylab = "Global_rective_power",xlab = "", ylab="datetime")
 })
 
 dev.off()
